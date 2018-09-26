@@ -7,11 +7,6 @@ import 'metrics-graphics/dist/metricsgraphics.css';
 
 // Vendor JS
 import 'bootstrap';
-// The official 'flot' NPM package is out of date, so we're using 'jquery.flot'
-// instead, which is identical to https://github.com/flot/flot
-import 'jquery.flot';
-import 'jquery.flot/jquery.flot.time';
-import 'jquery.flot/jquery.flot.selection';
 
 // Perf Styles
 import './css/treeherder-global.css';
@@ -21,9 +16,6 @@ import './css/treeherder-loading-overlay.css';
 
 // Bootstrap the Angular modules against which everything will be registered
 import './js/perf';
-
-// React UI
-import './shared/auth/Login';
 
 // Perf JS
 import './js/filters';

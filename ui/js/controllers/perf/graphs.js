@@ -9,6 +9,11 @@ import countBy from 'lodash/countBy';
 import remove from 'lodash/remove';
 import angular from 'angular';
 import Mousetrap from 'mousetrap';
+// The official 'flot' NPM package is out of date, so we're using 'jquery.flot'
+// instead, which is identical to https://github.com/flot/flot
+import 'jquery.flot';
+import 'jquery.flot/jquery.flot.time';
+import 'jquery.flot/jquery.flot.selection';
 
 import perf from '../../perf';
 import testDataChooserTemplate from '../../../partials/perf/testdatachooser.html';

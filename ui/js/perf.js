@@ -1,3 +1,4 @@
+import $ from 'jquery';
 import angular from 'angular';
 import angularClipboardModule from 'angular-clipboard';
 import uiBootstrap from 'angular1-ui-bootstrap4';
@@ -8,6 +9,9 @@ import { react2angular } from 'react2angular/index.es2015';
 
 import Login from '../shared/auth/Login';
 import treeherderModule from './treeherder';
+
+// Required since jquery.flot doesn't import jQuery itself.
+window.jQuery = $;
 
 const perf = angular.module('perf', [
   uiRouter,
